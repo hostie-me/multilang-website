@@ -1,101 +1,43 @@
-<!DOCTYPE html>
-<html data-wf-page="6690d4fcf3709b75ac575a43" data-wf-site="6690d4fbf3709b75ac575942" lang="es">
-<head>
-  <meta charset="utf-8">
-  <title>Planes y Precios - Hostie</title>
-  
-  <meta content="Descubre nuestros planes y precios de alojamiento web y hosting, con un año de alojamiento gratis." name="description">
-  <meta content="Planes de alojamiento web - Hostie" property="og:title">
-  <meta content="Descubre nuestros planes y precios de alojamiento web y hosting, con un año de alojamiento gratis." property="og:description">
-  <meta content="Planes de alojamiento web - Hostie" property="twitter:title">
-  <meta content="Descubre nuestros planes y precios de alojamiento web y hosting, con un año de alojamiento gratis." property="twitter:description">
-  
-  <meta property="og:type" content="website">
-  <meta content="summary_large_image" name="twitter:card">
-  <meta content="width=device-width, initial-scale=1" name="viewport">
-  <link href="css/normalize.css" rel="stylesheet" type="text/css">
-  <link href="css/webflow.css" rel="stylesheet" type="text/css">
-  <link href="css/christians-five-star-site-b12f92.webflow.css" rel="stylesheet" type="text/css">
-  <link href="css/christians-fabulous-site-b4fc40.webflow.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
-  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
-  <script type="text/javascript">WebFont.load({  google: {    families: ["Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic","Inter:regular,600,800","Source Code Pro:regular,600,800"]  }});</script>
-  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
-  <link rel="icon" type="image/png" href="images/favicon.png"/>
-  <style>
-  .w-webflow-badge{
-  display:none !important;
-  }
- </style>
-</head>
+{% include "global/header.html" %}
 <body>
+    <style>
+        .confetti-container {
+        pointer-events: none;
+        }
+        
+        .confetti {
+        margin-top: 40px;
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background-color: #31ad3f;
+        border-radius: 2px;
+        opacity: 1;
+        animation: confetti-fall 5s forwards, fade-out 1.5s forwards;
+        }
+        
+        @keyframes confetti-fall {
+        0% {
+            transform: translateY(0) translateX(0);
+        }
+        100% {
+            transform: translateY(120px) translateX(30px); /* Ajustado para más distancia */
+        }
+        }
+        
+        @keyframes fade-out {
+        0% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+        }
+    </style>
   <div class="page-wrapper">
     <div class="header-transparent">
-      <div data-w-id="c5a10a2d-1ce6-df65-3882-e8a1991bf291" data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="header-wrapper w-nav">
-        <div class="container-default w-container">
-          <div data-w-id="d4b2bf54-bf7c-1b29-d500-9ded72507fcc" class="header-container-wrapper">
-            <div class="nav-menu-left-side grow-tablet">
-              <div class="logo-wrapper">
-                <a href="https://www.hostie.me" aria-current="page" class="logo-link w-inline-block w--current"><img src="images/logo-hostie.png" alt="" sizes="(max-width: 479px) 86px, (max-width: 767px) 180px, 130px" srcset="images/logo-hostie-p-500.png 500w, images/logo-hostie.png 699w" class="header-logo"></a>
-              </div>
-              <div class="flex-horizontal growth-tablet gap-22px">
-                <nav role="navigation" class="nav-menu-wrapper w-nav-menu">
-                  <ul role="list" class="list-nav-menu">
-                    <li class="link-nav-item">
-                      <a id="w-node-_105c6810-7fd6-918e-ea4c-0a20c47f4eeb-c47f4eeb" data-w-id="105c6810-7fd6-918e-ea4c-0a20c47f4eeb" href="https://www.hostie.me/coming-soon.html" aria-current="page" class="link-copy-copy w-inline-block w--current">
-                        <div class="inline-block">Inicio</div>
-                      </a>
-                    </li>
-                    <li class="link-nav-item">
-                      <a id="w-node-_105c6810-7fd6-918e-ea4c-0a20c47f4eeb-c47f4eeb" data-w-id="105c6810-7fd6-918e-ea4c-0a20c47f4eeb" href="https://www.hostie.me/coming-soon.html" class="link-copy-copy w-inline-block">
-                        <div class="inline-block">Soluciones</div>
-                      </a>
-                    </li>
-                    <li class="link-nav-item">
-                      <a id="w-node-_105c6810-7fd6-918e-ea4c-0a20c47f4eeb-c47f4eeb" data-w-id="105c6810-7fd6-918e-ea4c-0a20c47f4eeb" href="https://www.hostie.me/coming-soon.html" class="link-copy-copy w-inline-block">
-                        <div class="inline-block">Premios</div>
-                      </a>
-                    </li>
-                    <li class="link-nav-item">
-                      <a id="w-node-_105c6810-7fd6-918e-ea4c-0a20c47f4eeb-c47f4eeb" data-w-id="105c6810-7fd6-918e-ea4c-0a20c47f4eeb" href="https://www.hostie.me/coming-soon.html" class="link-copy-copy w-inline-block">
-                        <div class="inline-block">Calidad</div>
-                      </a>
-                    </li>
-                    <li class="link-nav-item">
-                      <a id="w-node-_105c6810-7fd6-918e-ea4c-0a20c47f4eeb-c47f4eeb" data-w-id="105c6810-7fd6-918e-ea4c-0a20c47f4eeb" href="https://www.hostie.me/coming-soon.html" class="link-copy-copy w-inline-block">
-                        <div class="inline-block">✨Precio✨<br></div>
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-            </div>
-            <div class="nav-menu-right-side">
-              <div class="hidden-on-tablet">
-                <div class="social-media-flex">
-                  <a target="_blank" class="icon-font-wrapper text-neutral-100 text-decoration-none w-inline-block">
-                    <div class="text-block-4" style="color: #000;font-weight: 600;padding-top: 7px;">info@hostie.me</div>
-                  </a>
-                </div>
-              </div>
-              <div class="hide-on-mobile-landscape">
-                <a id="w-node-e9da5fd6-ab44-5b2f-81ad-6e5f36bfab9c-36bfab9c" href="mailto:info@hostie.me" class="button-primary-copy w-inline-block">
-                  <div class="text-block">Contacto</div>
-                </a>
-              </div>
-              <div class="hamburger-menu w-nav-button">
-                <div class="hamburger-menu-flex">
-                  <div class="hamburger-menu-line top"></div>
-                  <div class="hamburger-menu-line middle"></div>
-                  <div class="hamburger-menu-line bottom"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
+    {% include "global/menu.html" %}
+
     <section class="section hero packages" style="padding-top:70px">
       <div class="w-layout-blockcontainer container-default w-container">
         <div class="text-center">
@@ -106,7 +48,7 @@
             <h1 class="display-11 mg-bottom-16px" style="font-weight:500">Planes de alojamiento web</h1>
             <p class="paragraph-large">Descubre nuestros planes de alojamiento web: Soluciones flexibles y seguras para impulsar tu negocio online.</p>
 
-            <center><img style="width: 150px;margin-bottom: 25px;margin-top:50px" src="images/pricing-arrow.png"></center>
+            <center><img style="width: 150px;margin-bottom: 25px;margin-top:50px" src="../static/images/pricing-arrow.png"></center>
           </div>
         </div>
 
@@ -118,11 +60,11 @@
               <div class="card content-card-06" style="border: 5px solid black;padding:0px;">
                 <div style="background-color: #000;">
                   <div class="paragraph-large semi-bold text-neutral-800" style="color:#fff;padding: 8px;">
-                    <center>❌ Antes ❌</center>
+                    <center>Antes</center>
                   </div>
                 </div>
-                <div style="padding: 64px;position: relative;filter: blur(2px);" >
-                  <div style="width: 100%;height: 100%;position: absolute;top:0;left: 0;z-index: 10;background-color: #00000038;"></div>
+                <div style="padding: 64px;position: relative;filter: blur(2px);">
+                  <div style="width: 100%;height: 100%;position: absolute;top:0;left: 0;z-index: 10;background-color: #0000002f;"></div>
                   <div>
                     <div class="flex-horizontal justify-start gap-6px---flex-wrap">
                       <h3 class="display-11" style="color:#000;font-weight:600">70€</h3>
@@ -130,55 +72,54 @@
                         <div class="paragraph-large semi-bold text-neutral-800" style="color:#000">Anualmente</div>
                       </div>
                     </div>
-                    <br>
-                    <div style="background-color:#e8faea;border-radius: 10px;padding:10px; padding-top:15px">
-                      <h4 class="display-5" style="color:#31ad3f"><svg fill="#31ad3f" version="1.1" style="padding-top:5px" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" width="20px" height="20px"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <rect x="272.696" y="280.342" width="183.118" height="231.658"></rect> </g> </g> <g> <g> <rect x="56.186" y="280.342" width="183.118" height="231.658"></rect> </g> </g> <g> <g> <path d="M398.762,94.432c4.953-9.075,7.772-19.474,7.772-30.521C406.535,28.67,377.864,0,342.624,0 c-26.065,0-52.735,13.468-73.168,36.951c-5.057,5.811-9.561,12.056-13.456,18.56c-3.895-6.504-8.399-12.749-13.456-18.56 C222.111,13.468,195.442,0,169.376,0c-35.24,0-63.911,28.671-63.911,63.911c0,11.046,2.818,21.446,7.772,30.521H26.2v152.519 h213.104V94.432h33.391v152.519H485.8V94.432H398.762z M169.376,94.432c-16.828,0-30.52-13.692-30.52-30.521 c0-16.829,13.692-30.52,30.52-30.52c30.299,0,59.106,30.993,67.489,61.04H169.376z M342.624,94.432h-67.489 c8.383-30.048,37.19-61.04,67.489-61.04c16.828,0,30.52,13.692,30.52,30.52C373.143,80.741,359.452,94.432,342.624,94.432z"></path> </g> </g> </g></svg>
-                        Migración web y correos <b>GRATIS</b></h4>
+                    <div style="background-color:#ebebeb;border-radius: 10px;padding:10px; padding-top:15px;margin-top:10px">
+                      <h4 class="display-5" style="color:#505050"><svg fill="#505050" version="1.1" style="padding-top:5px" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" width="20px" height="20px"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <rect x="272.696" y="280.342" width="183.118" height="231.658"></rect> </g> </g> <g> <g> <rect x="56.186" y="280.342" width="183.118" height="231.658"></rect> </g> </g> <g> <g> <path d="M398.762,94.432c4.953-9.075,7.772-19.474,7.772-30.521C406.535,28.67,377.864,0,342.624,0 c-26.065,0-52.735,13.468-73.168,36.951c-5.057,5.811-9.561,12.056-13.456,18.56c-3.895-6.504-8.399-12.749-13.456-18.56 C222.111,13.468,195.442,0,169.376,0c-35.24,0-63.911,28.671-63.911,63.911c0,11.046,2.818,21.446,7.772,30.521H26.2v152.519 h213.104V94.432h33.391v152.519H485.8V94.432H398.762z M169.376,94.432c-16.828,0-30.52-13.692-30.52-30.521 c0-16.829,13.692-30.52,30.52-30.52c30.299,0,59.106,30.993,67.489,61.04H169.376z M342.624,94.432h-67.489 c8.383-30.048,37.19-61.04,67.489-61.04c16.828,0,30.52,13.692,30.52,30.52C373.143,80.741,359.452,94.432,342.624,94.432z"></path> </g> </g> </g></svg>
+                        Migración web <b>GRATIS</b></h4>
                     </div>
                   </div>
                   <br>
                   <hr><br>
                   <div class="w-layout-grid grid-1-column gap-row-16px mg-bottom-40px">
-                    <div id="w-node-_0453b21f-6c9e-ea78-9d59-363107285701-ac575a43" class="flex align-start gap-column-8px"><img alt="" src="images/blue-check-icon-agencia-x-webflow-template.svg" class="image-size _20px mg-top-2px">
+                    <div id="w-node-_0453b21f-6c9e-ea78-9d59-363107285701-ac575a43" class="flex align-start gap-column-8px"><img alt="" src="../static/images/blue-check-icon-agencia-x-webflow-template.svg" class="image-size _20px mg-top-2px">
                       <div class="display-4 text-neutral-600">1 Sitio Web</div>
                     </div>
-                    <div id="w-node-_0453b21f-6c9e-ea78-9d59-363107285701-ac575a43" class="flex align-start gap-column-8px"><img alt="" src="images/blue-check-icon-agencia-x-webflow-template.svg" class="image-size _20px mg-top-2px">
+                    <div id="w-node-_0453b21f-6c9e-ea78-9d59-363107285701-ac575a43" class="flex align-start gap-column-8px"><img alt="" src="../static/images/blue-check-icon-agencia-x-webflow-template.svg" class="image-size _20px mg-top-2px">
                       <div class="display-4 text-neutral-600">Espacio GB ilimitados</div>
                     </div>
-                    <div id="w-node-_83d0f3cb-3bc7-be79-5aad-9c362827f9c4-ac575a43" class="flex align-start gap-column-8px"><img alt="" src="images/blue-check-icon-agencia-x-webflow-template.svg" class="image-size _20px mg-top-2px">
+                    <div id="w-node-_83d0f3cb-3bc7-be79-5aad-9c362827f9c4-ac575a43" class="flex align-start gap-column-8px"><img alt="" src="../static/images/blue-check-icon-agencia-x-webflow-template.svg" class="image-size _20px mg-top-2px">
                       <div class="display-4 text-neutral-600">Correos ilimitados</div>
                     </div>
-                    <div id="w-node-_0453b21f-6c9e-ea78-9d59-363107285701-ac575a43" class="flex align-start gap-column-8px"><img alt="" src="images/blue-check-icon-agencia-x-webflow-template.svg" class="image-size _20px mg-top-2px">
+                    <div id="w-node-_0453b21f-6c9e-ea78-9d59-363107285701-ac575a43" class="flex align-start gap-column-8px"><img alt="" src="../static/images/blue-check-icon-agencia-x-webflow-template.svg" class="image-size _20px mg-top-2px">
                       <div class="display-4 text-neutral-600">Transferencia ilimitada</div>
                     </div>
-                    <div id="w-node-_0453b21f-6c9e-ea78-9d59-363107285701-ac575a43" class="flex align-start gap-column-8px"><img alt="" src="images/blue-check-icon-agencia-x-webflow-template.svg" class="image-size _20px mg-top-2px">
+                    <div id="w-node-_0453b21f-6c9e-ea78-9d59-363107285701-ac575a43" class="flex align-start gap-column-8px"><img alt="" src="../static/images/blue-check-icon-agencia-x-webflow-template.svg" class="image-size _20px mg-top-2px">
                       <div class="display-4 text-neutral-600">Visitas a la web ilimitada</div>
                     </div>
-                    <div id="w-node-e5ab77e9-690a-fa56-47f8-37ce0c2302c0-ac575a43" class="flex align-start gap-column-8px"><img alt="" src="images/blue-check-icon-agencia-x-webflow-template.svg" class="image-size _20px mg-top-2px">
+                    <div id="w-node-e5ab77e9-690a-fa56-47f8-37ce0c2302c0-ac575a43" class="flex align-start gap-column-8px"><img alt="" src="../static/images/blue-check-icon-agencia-x-webflow-template.svg" class="image-size _20px mg-top-2px">
                       <div class="display-4 text-neutral-600">Bases de datos ilimitadas</div>
                     </div>
-                    <div id="w-node-e5ab77e9-690a-fa56-47f8-37ce0c2302c0-ac575a43" class="flex align-start gap-column-8px"><img alt="" src="images/blue-check-icon-agencia-x-webflow-template.svg" class="image-size _20px mg-top-2px">
+                    <div id="w-node-e5ab77e9-690a-fa56-47f8-37ce0c2302c0-ac575a43" class="flex align-start gap-column-8px"><img alt="" src="../static/images/blue-check-icon-agencia-x-webflow-template.svg" class="image-size _20px mg-top-2px">
                       <div class="display-4 text-neutral-600">SSL Gratuito</div>
                     </div>
-                    <div id="w-node-_76d08b83-c68c-849a-29f3-dc74dad8d753-ac575a43" class="flex align-start gap-column-8px"><img alt="" src="images/blue-check-icon-agencia-x-webflow-template.svg" class="image-size _20px mg-top-2px">
+                    <div id="w-node-_76d08b83-c68c-849a-29f3-dc74dad8d753-ac575a43" class="flex align-start gap-column-8px"><img alt="" src="../static/images/blue-check-icon-agencia-x-webflow-template.svg" class="image-size _20px mg-top-2px">
                       <div class="display-4 text-neutral-600">Firewall web</div>
                     </div>
-                    <div id="w-node-_76d08b83-c68c-849a-29f3-dc74dad8d753-ac575a43" class="flex align-start gap-column-8px"><img alt="" src="images/blue-check-icon-agencia-x-webflow-template.svg" class="image-size _20px mg-top-2px">
+                    <div id="w-node-_76d08b83-c68c-849a-29f3-dc74dad8d753-ac575a43" class="flex align-start gap-column-8px"><img alt="" src="../static/images/blue-check-icon-agencia-x-webflow-template.svg" class="image-size _20px mg-top-2px">
                       <div class="display-4 text-neutral-600">Backups</div>
                     </div>
-                    <div id="w-node-_76d08b83-c68c-849a-29f3-dc74dad8d753-ac575a43" class="flex align-start gap-column-8px"><img alt="" src="images/blue-check-icon-agencia-x-webflow-template.svg" class="image-size _20px mg-top-2px">
+                    <div id="w-node-_76d08b83-c68c-849a-29f3-dc74dad8d753-ac575a43" class="flex align-start gap-column-8px"><img alt="" src="../static/images/blue-check-icon-agencia-x-webflow-template.svg" class="image-size _20px mg-top-2px">
                       <div class="display-4 text-neutral-600">Sin permanencia</div>
                     </div>
-                    <div id="w-node-_0453b21f-6c9e-ea78-9d59-363107285701-ac575a43" class="flex align-start gap-column-8px"><img alt="" src="images/blue-check-icon-agencia-x-webflow-template.svg" class="image-size _20px mg-top-2px">
+                    <div id="w-node-_0453b21f-6c9e-ea78-9d59-363107285701-ac575a43" class="flex align-start gap-column-8px"><img alt="" src="../static/images/blue-check-icon-agencia-x-webflow-template.svg" class="image-size _20px mg-top-2px">
                       <div class="display-4 text-neutral-600">Almacenamiento alta velocidad Nvme</div>
                     </div>
-                    <div id="w-node-_0453b21f-6c9e-ea78-9d59-363107285701-ac575a43" class="flex align-start gap-column-8px"><img alt="" src="images/blue-check-icon-agencia-x-webflow-template.svg" class="image-size _20px mg-top-2px">
+                    <div id="w-node-_0453b21f-6c9e-ea78-9d59-363107285701-ac575a43" class="flex align-start gap-column-8px"><img alt="" src="../static/images/blue-check-icon-agencia-x-webflow-template.svg" class="image-size _20px mg-top-2px">
                       <div class="display-4 text-neutral-600">Anti-DDOS</div>
                     </div>
-                    <div id="w-node-_0453b21f-6c9e-ea78-9d59-363107285701-ac575a43" class="flex align-start gap-column-8px"><img alt="" src="images/blue-check-icon-agencia-x-webflow-template.svg" class="image-size _20px mg-top-2px">
+                    <div id="w-node-_0453b21f-6c9e-ea78-9d59-363107285701-ac575a43" class="flex align-start gap-column-8px"><img alt="" src="../static/images/blue-check-icon-agencia-x-webflow-template.svg" class="image-size _20px mg-top-2px">
                       <div class="display-4 text-neutral-600">Multiversión PHP</div>
                     </div>
-                    <div id="w-node-_0453b21f-6c9e-ea78-9d59-363107285701-ac575a43" class="flex align-start gap-column-8px"><img alt="" src="images/blue-check-icon-agencia-x-webflow-template.svg" class="image-size _20px mg-top-2px">
+                    <div id="w-node-_0453b21f-6c9e-ea78-9d59-363107285701-ac575a43" class="flex align-start gap-column-8px"><img alt="" src="../static/images/blue-check-icon-agencia-x-webflow-template.svg" class="image-size _20px mg-top-2px">
                       <div class="display-4 text-neutral-600">Memoria PHP 516mb</div>
                     </div>
                   </div>
@@ -192,7 +133,7 @@
 
                   <br>
                   <center><p class="paragraph-large" style="color: #383838;font-size: 16px;">Contactanos para que valoraremos tu caso</p></center>
-                  <a id="w-node-_9ac5c108-4a68-32dd-6e03-9f793bb88842-3bb88842" href="contacto.html" class="secondary-button w-inline-block">
+                  <a id="w-node-_9ac5c108-4a68-32dd-6e03-9f793bb88842-3bb88842" href="#" class="secondary-button w-inline-block">
                     <div class="text-block" style="color: #000;">Contactar con ventas</div>
                   </a>
                 </div>
@@ -200,14 +141,15 @@
             </div>
           </div>
 
-          <div id="w-node-_10297a5f-53e6-a47f-01e1-15b96699cce8-ac575a43" class="w-tab-content">
+          <div id="w-node-_10297a5f-53e6-a47f-01e1-15b96699cce8-ac575a43" class="w-tab-content" style="box-shadow: 0px 0px 11px 1px rgba(49,173,63,1);border-radius: 24px;">
             <div class="_w-h-100">
-              <div class="card content-card-06" style="border: 5px solid black;padding:0px">
-                <div style="background-color: #000;">
+              <div class="card content-card-06" style="border: 5px solid #31ad3f;padding:0px;">
+                <div style="background-color: #31ad3f;">
                   <div class="paragraph-large semi-bold text-neutral-800" style="color:#fff;padding: 8px;">
-                    <center>⏰ Promoción Ahora⏰</center>
+                    <center>Promoción Ahora</center>
                   </div>
                 </div>
+                <div class="confetti-container"></div>
                 <div style="padding: 64px;">
                   <div>
                     <div class="flex-horizontal justify-start gap-6px---flex-wrap">
@@ -215,62 +157,63 @@
                       <div class="align-self-bottom">
                         <div class="paragraph-large semi-bold text-neutral-800" style="color:#000">Anualmente</div>
                       </div>
-                      <p class="paragraph-large" style="color: rgb(231, 179, 9);font-weight: 600;">Promoción válida de por vida</p>
+                      <p class="paragraph-large" style="color: rgb(231, 179, 9);font-weight: 600;">Promoción válida de por vida una vez obtenida</p>
+                      <a href="/{{current_lang}}/terms-and-conditions" style="margin-bottom: 34px;color: #7c7c7c;margin-top: -10px;">Términos y condiciones</a>
                     </div>
-                    <a href="terms.html" style="color: #7c7c7c;margin-top: -10px;">Términos y condiciones</a>
-                    
-                    <div style="background-color:#e8faea;border-radius: 10px;padding:10px; padding-top:15px;margin-top: 25px;margin-bottom: 15px;">
+
+                    <div style="background-color:#e8faea;border-radius: 10px;padding:10px; padding-top:10px">
                       <h4 class="display-5" style="color:#31ad3f"><svg fill="#31ad3f" version="1.1" style="padding-top:5px" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" width="20px" height="20px"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <rect x="272.696" y="280.342" width="183.118" height="231.658"></rect> </g> </g> <g> <g> <rect x="56.186" y="280.342" width="183.118" height="231.658"></rect> </g> </g> <g> <g> <path d="M398.762,94.432c4.953-9.075,7.772-19.474,7.772-30.521C406.535,28.67,377.864,0,342.624,0 c-26.065,0-52.735,13.468-73.168,36.951c-5.057,5.811-9.561,12.056-13.456,18.56c-3.895-6.504-8.399-12.749-13.456-18.56 C222.111,13.468,195.442,0,169.376,0c-35.24,0-63.911,28.671-63.911,63.911c0,11.046,2.818,21.446,7.772,30.521H26.2v152.519 h213.104V94.432h33.391v152.519H485.8V94.432H398.762z M169.376,94.432c-16.828,0-30.52-13.692-30.52-30.521 c0-16.829,13.692-30.52,30.52-30.52c30.299,0,59.106,30.993,67.489,61.04H169.376z M342.624,94.432h-67.489 c8.383-30.048,37.19-61.04,67.489-61.04c16.828,0,30.52,13.692,30.52,30.52C373.143,80.741,359.452,94.432,342.624,94.432z"></path> </g> </g> </g></svg>
                         1 Año de alojamiento web <b>GRATIS</b></h4>
                     </div>
-                    <div style="background-color:#e8faea;border-radius: 10px;padding:10px; padding-top:15px">
-                      <h4 class="display-5" style="color:#31ad3f"><svg fill="#31ad3f" version="1.1" style="padding-top:5px" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" width="20px" height="20px"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <rect x="272.696" y="280.342" width="183.118" height="231.658"></rect> </g> </g> <g> <g> <rect x="56.186" y="280.342" width="183.118" height="231.658"></rect> </g> </g> <g> <g> <path d="M398.762,94.432c4.953-9.075,7.772-19.474,7.772-30.521C406.535,28.67,377.864,0,342.624,0 c-26.065,0-52.735,13.468-73.168,36.951c-5.057,5.811-9.561,12.056-13.456,18.56c-3.895-6.504-8.399-12.749-13.456-18.56 C222.111,13.468,195.442,0,169.376,0c-35.24,0-63.911,28.671-63.911,63.911c0,11.046,2.818,21.446,7.772,30.521H26.2v152.519 h213.104V94.432h33.391v152.519H485.8V94.432H398.762z M169.376,94.432c-16.828,0-30.52-13.692-30.52-30.521 c0-16.829,13.692-30.52,30.52-30.52c30.299,0,59.106,30.993,67.489,61.04H169.376z M342.624,94.432h-67.489 c8.383-30.048,37.19-61.04,67.489-61.04c16.828,0,30.52,13.692,30.52,30.52C373.143,80.741,359.452,94.432,342.624,94.432z"></path> </g> </g> </g></svg>
-                        Migración web y correos <b>GRATIS</b></h4>
+                    <br>
+                    <div style="background-color:#ebebeb;border-radius: 10px;padding:10px; padding-top:10px">
+                      <h4 class="display-5" style="color:#505050"><svg fill="#505050" version="1.1" style="padding-top:5px" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" width="20px" height="20px"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <rect x="272.696" y="280.342" width="183.118" height="231.658"></rect> </g> </g> <g> <g> <rect x="56.186" y="280.342" width="183.118" height="231.658"></rect> </g> </g> <g> <g> <path d="M398.762,94.432c4.953-9.075,7.772-19.474,7.772-30.521C406.535,28.67,377.864,0,342.624,0 c-26.065,0-52.735,13.468-73.168,36.951c-5.057,5.811-9.561,12.056-13.456,18.56c-3.895-6.504-8.399-12.749-13.456-18.56 C222.111,13.468,195.442,0,169.376,0c-35.24,0-63.911,28.671-63.911,63.911c0,11.046,2.818,21.446,7.772,30.521H26.2v152.519 h213.104V94.432h33.391v152.519H485.8V94.432H398.762z M169.376,94.432c-16.828,0-30.52-13.692-30.52-30.521 c0-16.829,13.692-30.52,30.52-30.52c30.299,0,59.106,30.993,67.489,61.04H169.376z M342.624,94.432h-67.489 c8.383-30.048,37.19-61.04,67.489-61.04c16.828,0,30.52,13.692,30.52,30.52C373.143,80.741,359.452,94.432,342.624,94.432z"></path> </g> </g> </g></svg>
+                        Migración web <b>GRATIS</b></h4>
                     </div>
                   </div>
                   <br>
                   <hr><br>
                   <div class="w-layout-grid grid-1-column gap-row-16px mg-bottom-40px">
-                    <div id="w-node-_0453b21f-6c9e-ea78-9d59-363107285701-ac575a43" class="flex align-start gap-column-8px"><img alt="" src="images/blue-check-icon-agencia-x-webflow-template.svg" class="image-size _20px mg-top-2px">
+                    <div id="w-node-_0453b21f-6c9e-ea78-9d59-363107285701-ac575a43" class="flex align-start gap-column-8px"><img alt="" src="../static/images/blue-check-icon-agencia-x-webflow-template.svg" class="image-size _20px mg-top-2px">
                       <div class="display-4 text-neutral-600">1 Sitio Web</div>
                     </div>
-                    <div id="w-node-_0453b21f-6c9e-ea78-9d59-363107285701-ac575a43" class="flex align-start gap-column-8px"><img alt="" src="images/blue-check-icon-agencia-x-webflow-template.svg" class="image-size _20px mg-top-2px">
+                    <div id="w-node-_0453b21f-6c9e-ea78-9d59-363107285701-ac575a43" class="flex align-start gap-column-8px"><img alt="" src="../static/images/blue-check-icon-agencia-x-webflow-template.svg" class="image-size _20px mg-top-2px">
                       <div class="display-4 text-neutral-600">Espacio GB ilimitados</div>
                     </div>
-                    <div id="w-node-_83d0f3cb-3bc7-be79-5aad-9c362827f9c4-ac575a43" class="flex align-start gap-column-8px"><img alt="" src="images/blue-check-icon-agencia-x-webflow-template.svg" class="image-size _20px mg-top-2px">
+                    <div id="w-node-_83d0f3cb-3bc7-be79-5aad-9c362827f9c4-ac575a43" class="flex align-start gap-column-8px"><img alt="" src="../static/images/blue-check-icon-agencia-x-webflow-template.svg" class="image-size _20px mg-top-2px">
                       <div class="display-4 text-neutral-600">Correos ilimitados</div>
                     </div>
-                    <div id="w-node-_0453b21f-6c9e-ea78-9d59-363107285701-ac575a43" class="flex align-start gap-column-8px"><img alt="" src="images/blue-check-icon-agencia-x-webflow-template.svg" class="image-size _20px mg-top-2px">
+                    <div id="w-node-_0453b21f-6c9e-ea78-9d59-363107285701-ac575a43" class="flex align-start gap-column-8px"><img alt="" src="../static/images/blue-check-icon-agencia-x-webflow-template.svg" class="image-size _20px mg-top-2px">
                       <div class="display-4 text-neutral-600">Transferencia ilimitada</div>
                     </div>
-                    <div id="w-node-_0453b21f-6c9e-ea78-9d59-363107285701-ac575a43" class="flex align-start gap-column-8px"><img alt="" src="images/blue-check-icon-agencia-x-webflow-template.svg" class="image-size _20px mg-top-2px">
+                    <div id="w-node-_0453b21f-6c9e-ea78-9d59-363107285701-ac575a43" class="flex align-start gap-column-8px"><img alt="" src="../static/images/blue-check-icon-agencia-x-webflow-template.svg" class="image-size _20px mg-top-2px">
                       <div class="display-4 text-neutral-600">Visitas a la web ilimitada</div>
                     </div>
-                    <div id="w-node-e5ab77e9-690a-fa56-47f8-37ce0c2302c0-ac575a43" class="flex align-start gap-column-8px"><img alt="" src="images/blue-check-icon-agencia-x-webflow-template.svg" class="image-size _20px mg-top-2px">
+                    <div id="w-node-e5ab77e9-690a-fa56-47f8-37ce0c2302c0-ac575a43" class="flex align-start gap-column-8px"><img alt="" src="../static/images/blue-check-icon-agencia-x-webflow-template.svg" class="image-size _20px mg-top-2px">
                       <div class="display-4 text-neutral-600">Bases de datos ilimitadas</div>
                     </div>
-                    <div id="w-node-e5ab77e9-690a-fa56-47f8-37ce0c2302c0-ac575a43" class="flex align-start gap-column-8px"><img alt="" src="images/blue-check-icon-agencia-x-webflow-template.svg" class="image-size _20px mg-top-2px">
+                    <div id="w-node-e5ab77e9-690a-fa56-47f8-37ce0c2302c0-ac575a43" class="flex align-start gap-column-8px"><img alt="" src="../static/images/blue-check-icon-agencia-x-webflow-template.svg" class="image-size _20px mg-top-2px">
                       <div class="display-4 text-neutral-600">SSL Gratuito</div>
                     </div>
-                    <div id="w-node-_76d08b83-c68c-849a-29f3-dc74dad8d753-ac575a43" class="flex align-start gap-column-8px"><img alt="" src="images/blue-check-icon-agencia-x-webflow-template.svg" class="image-size _20px mg-top-2px">
+                    <div id="w-node-_76d08b83-c68c-849a-29f3-dc74dad8d753-ac575a43" class="flex align-start gap-column-8px"><img alt="" src="../static/images/blue-check-icon-agencia-x-webflow-template.svg" class="image-size _20px mg-top-2px">
                       <div class="display-4 text-neutral-600">Firewall web</div>
                     </div>
-                    <div id="w-node-_76d08b83-c68c-849a-29f3-dc74dad8d753-ac575a43" class="flex align-start gap-column-8px"><img alt="" src="images/blue-check-icon-agencia-x-webflow-template.svg" class="image-size _20px mg-top-2px">
+                    <div id="w-node-_76d08b83-c68c-849a-29f3-dc74dad8d753-ac575a43" class="flex align-start gap-column-8px"><img alt="" src="../static/images/blue-check-icon-agencia-x-webflow-template.svg" class="image-size _20px mg-top-2px">
                       <div class="display-4 text-neutral-600">Backups</div>
                     </div>
-                    <div id="w-node-_76d08b83-c68c-849a-29f3-dc74dad8d753-ac575a43" class="flex align-start gap-column-8px"><img alt="" src="images/blue-check-icon-agencia-x-webflow-template.svg" class="image-size _20px mg-top-2px">
+                    <div id="w-node-_76d08b83-c68c-849a-29f3-dc74dad8d753-ac575a43" class="flex align-start gap-column-8px"><img alt="" src="../static/images/blue-check-icon-agencia-x-webflow-template.svg" class="image-size _20px mg-top-2px">
                       <div class="display-4 text-neutral-600">Sin permanencia</div>
                     </div>
-                    <div id="w-node-_0453b21f-6c9e-ea78-9d59-363107285701-ac575a43" class="flex align-start gap-column-8px"><img alt="" src="images/blue-check-icon-agencia-x-webflow-template.svg" class="image-size _20px mg-top-2px">
+                    <div id="w-node-_0453b21f-6c9e-ea78-9d59-363107285701-ac575a43" class="flex align-start gap-column-8px"><img alt="" src="../static/images/blue-check-icon-agencia-x-webflow-template.svg" class="image-size _20px mg-top-2px">
                       <div class="display-4 text-neutral-600">Almacenamiento alta velocidad Nvme</div>
                     </div>
-                    <div id="w-node-_0453b21f-6c9e-ea78-9d59-363107285701-ac575a43" class="flex align-start gap-column-8px"><img alt="" src="images/blue-check-icon-agencia-x-webflow-template.svg" class="image-size _20px mg-top-2px">
+                    <div id="w-node-_0453b21f-6c9e-ea78-9d59-363107285701-ac575a43" class="flex align-start gap-column-8px"><img alt="" src="../static/images/blue-check-icon-agencia-x-webflow-template.svg" class="image-size _20px mg-top-2px">
                       <div class="display-4 text-neutral-600">Anti-DDOS</div>
                     </div>
-                    <div id="w-node-_0453b21f-6c9e-ea78-9d59-363107285701-ac575a43" class="flex align-start gap-column-8px"><img alt="" src="images/blue-check-icon-agencia-x-webflow-template.svg" class="image-size _20px mg-top-2px">
+                    <div id="w-node-_0453b21f-6c9e-ea78-9d59-363107285701-ac575a43" class="flex align-start gap-column-8px"><img alt="" src="../static/images/blue-check-icon-agencia-x-webflow-template.svg" class="image-size _20px mg-top-2px">
                       <div class="display-4 text-neutral-600">Multiversión PHP</div>
                     </div>
-                    <div id="w-node-_0453b21f-6c9e-ea78-9d59-363107285701-ac575a43" class="flex align-start gap-column-8px"><img alt="" src="images/blue-check-icon-agencia-x-webflow-template.svg" class="image-size _20px mg-top-2px">
+                    <div id="w-node-_0453b21f-6c9e-ea78-9d59-363107285701-ac575a43" class="flex align-start gap-column-8px"><img alt="" src="../static/images/blue-check-icon-agencia-x-webflow-template.svg" class="image-size _20px mg-top-2px">
                       <div class="display-4 text-neutral-600">Memoria PHP 516mb</div>
                     </div>
                   </div>
@@ -283,11 +226,11 @@
                   </p>
 
                   <div style="margin-top:20px;background-color:#000000;border-radius: 10px;padding:10px;">
-                    <center><h4 class="display-5" style="color:#ffffff;">✨Promoción disponible solo para <br>empresas seleccionadas✨</h4></center>
+                    <center><h4 class="display-5" style="color:#ffffff;">✨Promoción con tiempo limitado✨</h4></center>
                   </div>
                   <br>
                   <center><p class="paragraph-large" style="color: #383838;font-size: 16px;">Contactanos para que valoraremos tu caso</p></center>
-                  <a id="w-node-_9ac5c108-4a68-32dd-6e03-9f793bb88842-3bb88842" href="contacto.html" class="secondary-button w-inline-block">
+                  <a id="w-node-_9ac5c108-4a68-32dd-6e03-9f793bb88842-3bb88842" href="/{{current_lang}}/contact" class="secondary-button w-inline-block">
                     <div class="text-block" style="color: #000;">Contactar con ventas</div>
                   </a>
                 </div>
@@ -298,18 +241,30 @@
       </div>
     </section>
 
-    <footer class="footer-wrapper" style="background-color:#f9fcff">
-      <div class="w-layout-blockcontainer container-default w-container">
-        <div class="footer-bottom _01">
-          <p class="display-4" style="font-size:16px">Copyright © <strong class="bold-text-2">Hostie</strong> | A Company By <img height="15px" width="auto" src="images/logo-stridax.png" /></p>
-          <div class="social-media-flex">
-            <p class="display-4" style="font-size:13px">Política de privacidad&nbsp;&nbsp;·&nbsp;&nbsp;Política de cookies&nbsp;&nbsp;·&nbsp;&nbsp;Términos y condiciones&nbsp;&nbsp;·&nbsp;&nbsp;Aviso Legal</p>
-          </div>
-        </div>
-      </div>
-    </footer>
+    {% include "global/footer.html" %}
   </div>
-  <script src="js/6690d4fbf3709b75ac575942.js" type="text/javascript"></script>
-  <script src="js/webflow2.js" type="text/javascript"></script>
+  <script src="../static/js/6690d4fbf3709b75ac575942.js" type="text/javascript"></script>
+  <script src="../static/js/webflow2.js" type="text/javascript"></script>
+  <script>
+  function createConfetti() {
+    const container = document.querySelector('.confetti-container');
+    for (let i = 0; i < 40; i++) { // Cambiar por la cantidad de partículas que deseas
+      const confetti = document.createElement('div');
+      confetti.classList.add('confetti');
+
+      const posX = Math.random() * container.clientWidth;
+      
+      confetti.style.top = 0;
+      confetti.style.left = `${posX}px`;
+
+      container.appendChild(confetti);
+
+      setTimeout(() => {
+        confetti.remove();
+      }, 1500); 
+    }
+  }
+  setInterval(createConfetti, 200);
+  </script>
 </body>
 </html>

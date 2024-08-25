@@ -1,3 +1,14 @@
-<url>
-  {{sitemapString}}
-</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    {% for page in pages %}
+    <url>
+        <loc>{{ page.urls[0].loc }}</loc>
+        <lastmod>{{ page.lastmod }}</lastmod>
+        <changefreq>{{ page.changefreq }}</changefreq>
+        {% for url in page.urls %}
+        <xhtml:link rel="alternate" hreflang="{{ url.hreflang }}" href="{{ url.loc }}"/>
+        {%- endfor %}
+    </url>
+    {%- endfor %}
+</urlset>

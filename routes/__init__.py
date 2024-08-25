@@ -6,9 +6,3 @@ views = [f for f in os.listdir(module_path) if f.endswith(".py") and f != "__ini
 __all__ = views
 for view in views:
     importlib.import_module("routes.%s" % view[:-3])
-
-print(
-    "Routes: %s" % ", ".join(views)
-    if views
-    else "No routes avaiable in the views directory."
-)
