@@ -18,19 +18,27 @@ def lang_index(lang):
 @app.route("/<lang>/solutions")
 def lang_solutions(lang):
     if lang not in LANGUAGES: return redirect(url_for("lang_solutions", lang=DEFAULT_LANG))
-    return render_template("coming-soon.html", translations=app.config[lang], current_lang=lang)
+
+    title = app.config[lang]["title_solutions"]
+    description = app.config[lang]["content_solutions"]
+
+    return render_template("solutions.html", title=title, description=description, translations=app.config[lang], current_lang=lang)
 
 
 @app.route("/<lang>/awards")
 def lang_awards(lang):
     if lang not in LANGUAGES: return redirect(url_for("lang_awards", lang=DEFAULT_LANG))
+
+    title = app.config[lang]["title_awards"]
+    description = app.config[lang]["content_awards"]
+
+    return render_template("awards.html", title=title, description=description, translations=app.config[lang], current_lang=lang)
+
+
+@app.route("/<lang>/certifications")
+def lang_certifications(lang):
+    if lang not in LANGUAGES: return redirect(url_for("lang_coming_soon", lang=DEFAULT_LANG))
     return render_template("coming-soon.html", translations=app.config[lang], current_lang=lang)
-
-
-@app.route("/<lang>/quality")
-def lang_quality(lang):
-    if lang not in LANGUAGES: return redirect(url_for("lang_quality", lang=DEFAULT_LANG))
-    return render_template("coming-soon.html", translations=app.config[lang], current_lang=lang, languages=LANGUAGES)
 
 
 @app.route("/<lang>/pricing")

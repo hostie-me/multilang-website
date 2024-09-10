@@ -5,6 +5,12 @@
   "title_pricing": "Planes de alojamiento web - Hostie",
   "content_pricing": "Descubre nuestros planes y precios de alojamiento web y hosting, con un año de alojamiento gratis.",
 
+  "title_solutions": "Beneficios de nuestro alojamiento - Hostie",
+  "content_solutions": "Descubre los beneficios de nuestro alojamiento web, con un año de alojamiento gratis.",
+
+  "title_awards": "Premios de nuestro hosting - Hostie",
+  "content_awards": "Descubre los premios del alojamiento web que ofrecemos.",
+
   "title_contact": "Contacta con nosotros - Hostie",
   "content_contact": "Ponte en contacto con nuestros diferentes departamentos, soporte, ventas, información...",
 
@@ -12,9 +18,9 @@
   "content_comingsoon": "Estamos trabajando en ello, tenemos un nuevo diseño preparado.",
 
   "nav_home": "Inicio",
-  "nav_solutions": "Soluciones",
+  "nav_solutions": "Beneficios",
   "nav_awards": "Premios",
-  "nav_quality": "Calidad",
+  "nav_certifications": "Certificaciones",
   "nav_pricing": "✨Precio✨",
   "nav_contact": "Contacto",
   "nav_email": "info@hostie.me",
