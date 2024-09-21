@@ -38,7 +38,11 @@ def lang_awards(lang):
 @app.route("/<lang>/certifications")
 def lang_certifications(lang):
     if lang not in LANGUAGES: return redirect(url_for("lang_coming_soon", lang=DEFAULT_LANG))
-    return render_template("coming-soon.html", translations=app.config[lang], current_lang=lang)
+
+    title = app.config[lang]["title_certifications"]
+    description = app.config[lang]["content_certifications"]
+
+    return render_template("certifications.html", title=title, description=description, translations=app.config[lang], current_lang=lang)
 
 
 @app.route("/<lang>/pricing")
